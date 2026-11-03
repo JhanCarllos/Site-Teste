@@ -1,0 +1,149 @@
+{
+  "verified_at": "2026-10-31T06:15:00Z",
+  "base_path": "C:\\Users\\jhang\\Documents\\BlanCoAgency-Projetos\\bella-napoli\\assets\\referencias",
+  "visual_references_path": "C:\\Users\\jhang\\Documents\\BlanCoAgency-Projetos\\bella-napoli\\visual-references",
+  "visual_references_status": "VAZIO (limpo após cada download)",
+  "total_folders": 17,
+  "total_images": 41,
+  "folders": {
+    "margherita": {
+      "count": 3,
+      "files": [
+        { "name": "ref-01-File-Eq-it-na-pizza-margherita-sep2005-sml.jpg.jpg", "size_kb": 642.0, "path": "margherita/ref-01-File-Eq-it-na-pizza-margherita-sep2005-sml.jpg.jpg" },
+        { "name": "ref-02-File-Neapolitan-pizza.jpg.jpg", "size_kb": 283.9, "path": "margherita/ref-02-File-Neapolitan-pizza.jpg.jpg" },
+        { "name": "ref-03-File-Neapolitan-pizza-1-.jpg.jpg", "size_kb": 819.7, "path": "margherita/ref-03-File-Neapolitan-pizza-1-.jpg.jpg" }
+      ]
+    },
+    "marinara": {
+      "count": 6,
+      "files": [
+        { "name": "ref-01-File-Eq-it-na-pizza-margherita-sep2005-sml.jpg.jpg", "size_kb": 642.0, "path": "marinara/ref-01-File-Eq-it-na-pizza-margherita-sep2005-sml.jpg.jpg" },
+        { "name": "ref-01-File-Shabbytravel-Pizza-Marinara-Con-Carciofi.jpg.jpg", "size_kb": 402.0, "path": "marinara/ref-01-File-Shabbytravel-Pizza-Marinara-Con-Carciofi.jpg.jpg" },
+        { "name": "ref-02-File-Neapolitan-pizza.jpg.jpg", "size_kb": 283.9, "path": "marinara/ref-02-File-Neapolitan-pizza.jpg.jpg" },
+        { "name": "ref-02-File-Pizza-marinara.jpg.jpg", "size_kb": 350.2, "path": "marinara/ref-02-File-Pizza-marinara.jpg.jpg" },
+        { "name": "ref-03-File-Neapolitan-pizza-1-.jpg.jpg", "size_kb": 819.7, "path": "marinara/ref-03-File-Neapolitan-pizza-1-.jpg.jpg" },
+        { "name": "ref-03-File-Pizza-marinara-Napoli-.jpg.jpg", "size_kb": 337.9, "path": "marinara/ref-03-File-Pizza-marinara-Napoli-.jpg.jpg" }
+      ],
+      "note": "Inclui 3 arquivos da busca anterior (margherita) que não foram limpos - apenas 3 são específicos de marinara"
+    },
+    "napoletana": {
+      "count": 3,
+      "files": [
+        { "name": "ref-01-File-Pizza-with-anchovies-2010-by-RaBoe.jpg.jpg", "size_kb": 774.0, "path": "napoletana/ref-01-File-Pizza-with-anchovies-2010-by-RaBoe.jpg.jpg" },
+        { "name": "ref-02-File-Pizza-with-meat-anchovies-olives.jpg.jpg", "size_kb": 219.6, "path": "napoletana/ref-02-File-Pizza-with-meat-anchovies-olives.jpg.jpg" },
+        { "name": "ref-03-File-Pizza-with-mozzarella-and-anchovies.jpg.jpg", "size_kb": 535.4, "path": "napoletana/ref-03-File-Pizza-with-mozzarella-and-anchovies.jpg.jpg" }
+      ]
+    },
+    "calabresa": {
+      "count": 3,
+      "files": [
+        { "name": "ref-01-File-Pizza-de-calabresa-5465192982-.jpg.jpg", "size_kb": 168.5, "path": "calabresa/ref-01-File-Pizza-de-calabresa-5465192982-.jpg.jpg" },
+        { "name": "ref-02-File-Pizza-calabresa-argentina-plato-.jpg.jpg", "size_kb": 182.8, "path": "calabresa/ref-02-File-Pizza-calabresa-argentina-plato-.jpg.jpg" },
+        { "name": "ref-03-File-Pizza-calabresa-argentina-bandejas-.jpg.jpg", "size_kb": 386.6, "path": "calabresa/ref-03-File-Pizza-calabresa-argentina-bandejas-.jpg.jpg" }
+      ]
+    },
+    "quatro-queijos": {
+      "count": 3,
+      "files": [
+        { "name": "ref-01-File-Pizza-quattro-formaggi-at-restaurant-Chalk-Farm-Road-London.jpg.jpg", "size_kb": 347.2, "path": "quatro-queijos/ref-01-File-Pizza-quattro-formaggi-at-restaurant-Chalk-Farm-Road-London.jpg.jpg" },
+        { "name": "ref-02-File-Four-cheese-pizza.jpg.jpg", "size_kb": 260.8, "path": "quatro-queijos/ref-02-File-Four-cheese-pizza.jpg.jpg" },
+        { "name": "ref-03-File-Pizza-pazza---spaghetti-ai-quattro-formaggi-e-speck.jpg.jpg", "size_kb": 215.7, "path": "quatro-queijos/ref-03-File-Pizza-pazza---spaghetti-ai-quattro-formaggi-e-speck.jpg.jpg" }
+      ]
+    },
+    "portuguesa": {
+      "count": 3,
+      "files": [
+        { "name": "ref-01-File-Falantes-no-mundo.jpg.jpg", "size_kb": 45.2, "path": "portuguesa/ref-01-File-Falantes-no-mundo.jpg.jpg" },
+        { "name": "ref-02-File-Mercado-da-Ribeira-after-restoration-1st-floor-45470778584-.jpg.jpg", "size_kb": 436.9, "path": "portuguesa/ref-02-File-Mercado-da-Ribeira-after-restoration-1st-floor-45470778584-.jpg.jpg" },
+        { "name": "ref-03-File-Icon-s-Restaurant-42185647730-.jpg.jpg", "size_kb": 327.9, "path": "portuguesa/ref-03-File-Icon-s-Restaurant-42185647730-.jpg.jpg" }
+      ],
+      "note": "⚠️ RESULTADOS NÃO RELACIONADOS À PIZZA PORTUGUESA - query 'pizza portuguesa' retornou imagens irrelevantes"
+    },
+    "bella-napoli": {
+      "count": 3,
+      "files": [
+        { "name": "ref-01-File-Pasta-mission-devolved-into-pizza-mission-3962667487-.jpg.jpg", "size_kb": 69.8, "path": "bella-napoli/ref-01-File-Pasta-mission-devolved-into-pizza-mission-3962667487-.jpg.jpg" },
+        { "name": "ref-02-File-Prosciutto-Rucola---tomato-mozzarella-arugula-prosciutto-di-Parma-peco.jpg", "size_kb": 136.1, "path": "bella-napoli/ref-02-File-Prosciutto-Rucola---tomato-mozzarella-arugula-prosciutto-di-Parma-peco.jpg" },
+        { "name": "ref-03-File-Rossa-pizza-23-January-2025-Trattoria-Dolci-Solaire-Resort-NorthC.jpg.jpg", "size_kb": 290.3, "path": "bella-napoli/ref-03-File-Rossa-pizza-23-January-2025-Trattoria-Dolci-Solaire-Resort-NorthC.jpg.jpg" }
+      ]
+    },
+    "trufada": {
+      "count": 3,
+      "files": [
+        { "name": "ref-01-File-Robion-pizza-aux-truffes-Focacia-al-tartufo-.JPG.jpg", "size_kb": 371.7, "path": "trufada/ref-01-File-Robion-pizza-aux-truffes-Focacia-al-tartufo-.JPG.jpg" },
+        { "name": "ref-02-File-Ham-Truffle---Fatto-a-Mano.jpg.jpg", "size_kb": 688.7, "path": "trufada/ref-02-File-Ham-Truffle---Fatto-a-Mano.jpg.jpg" },
+        { "name": "ref-03-File-Black-Truffle-Pizza---Purezza-2023-11-22.jpg.jpg", "size_kb": 740.1, "path": "trufada/ref-03-File-Black-Truffle-Pizza---Purezza-2023-11-22.jpg.jpg" }
+      ]
+    },
+    "parma": {
+      "count": 2,
+      "files": [
+        { "name": "ref-01-File-Prosciutto-Rucola---tomato-mozzarella-arugula-prosciutto-di-Parma-peco.jpg", "size_kb": 136.1, "path": "parma/ref-01-File-Prosciutto-Rucola---tomato-mozzarella-arugula-prosciutto-di-Parma-peco.jpg" },
+        { "name": "ref-02-File-Rossa-pizza-23-January-2025-Trattoria-Dolci-Solaire-Resort-NorthC.jpg.jpg", "size_kb": 290.3, "path": "parma/ref-02-File-Rossa-pizza-23-January-2025-Trattoria-Dolci-Solaire-Resort-NorthC.jpg.jpg" }
+      ]
+    },
+    "vegetariana-gourmet": {
+      "count": 3,
+      "files": [
+        { "name": "ref-01-File-Vegetarian-pizza-with-beans-chunks-of-nutolene-and-cheese.jpg.jpg", "size_kb": 307.3, "path": "vegetariana-gourmet/ref-01-File-Vegetarian-pizza-with-beans-chunks-of-nutolene-and-cheese.jpg.jpg" },
+        { "name": "ref-02-File-Vegetarian-pizza.jpg.jpg", "size_kb": 360.1, "path": "vegetariana-gourmet/ref-02-File-Vegetarian-pizza.jpg.jpg" },
+        { "name": "ref-03-File-Vegetarian-pizza-toast.jpg.jpg", "size_kb": 180.1, "path": "vegetariana-gourmet/ref-03-File-Vegetarian-pizza-toast.jpg.jpg" }
+      ]
+    },
+    "carbonara": {
+      "count": 2,
+      "files": [
+        { "name": "ref-01-File-Pizza-carbonara-slice.jpg.jpg", "size_kb": 233.3, "path": "carbonara/ref-01-File-Pizza-carbonara-slice.jpg.jpg" },
+        { "name": "ref-02-File-Frittatina-alla-carbonara---VIP-Very-Italian-Pizza-Brighton-2024-01-27.jpg", "size_kb": 549.7, "path": "carbonara/ref-02-File-Frittatina-alla-carbonara---VIP-Very-Italian-Pizza-Brighton-2024-01-27.jpg" }
+      ]
+    },
+    "frutos-do-mar": {
+      "count": 3,
+      "files": [
+        { "name": "ref-01-File-Pizza-Frutti-di-Mare-at-Pizza-Pronto.jpg.jpg", "size_kb": 250.2, "path": "frutos-do-mar/ref-01-File-Pizza-Frutti-di-Mare-at-Pizza-Pronto.jpg.jpg" },
+        { "name": "ref-02-File-Pizza-Isola-d-Elba.jpg.jpg", "size_kb": 313.5, "path": "frutos-do-mar/ref-02-File-Pizza-Isola-d-Elba.jpg.jpg" },
+        { "name": "ref-03-File-Raft-pizza-at-Gete-Deli.jpg.jpg", "size_kb": 261.7, "path": "frutos-do-mar/ref-03-File-Raft-pizza-at-Gete-Deli.jpg.jpg" }
+      ]
+    },
+    "nutella-morango": {
+      "count": 1,
+      "files": [
+        { "name": "ref-01-File-Dessertpizza.jpg.jpg", "size_kb": 383.9, "path": "nutella-morango/ref-01-File-Dessertpizza.jpg.jpg" }
+      ]
+    },
+    "doce-de-leite-coco": {
+      "count": 2,
+      "files": [
+        { "name": "ref-01-File-El-craso-rogel-de-dulce-de-leche-y-que-parece-Imperial-Star-Destroyer-.jpg", "size_kb": 459.5, "path": "doce-de-leite-coco/ref-01-File-El-craso-rogel-de-dulce-de-leche-y-que-parece-Imperial-Star-Destroyer-.jpg" },
+        { "name": "ref-02-File-Pizza-de-brownie-com-borda-de-doce-de-leite.jpg.jpg", "size_kb": 409.6, "path": "doce-de-leite-coco/ref-02-File-Pizza-de-brownie-com-borda-de-doce-de-leite.jpg.jpg" }
+      ]
+    },
+    "romeu-julieta": {
+      "count": 0,
+      "files": [],
+      "note": "PASTA VAZIA - 0 resultados em todas as queries testadas (goiabada/queijo é termo muito específico brasileiro)"
+    },
+    "banana-canela": {
+      "count": 1,
+      "files": [
+        { "name": "ref-01-File-Bart-k-Festival-Caph-by-Hai-Nam-Zelt-Bananenbrot-2025-jbuda.jpg.jpg", "size_kb": 464.9, "path": "banana-canela/ref-01-File-Bart-k-Festival-Caph-by-Hai-Nam-Zelt-Bananenbrot-2025-jbuda.jpg.jpg" }
+      ],
+      "note": "⚠️ Resultado parece ser 'Bananenbrot' (pão de banana alemão), não pizza de banana com canela"
+    },
+    "tiramisu": {
+      "count": 2,
+      "files": [
+        { "name": "ref-01-File-Pizza-Express-South-Croydon-London-3376677566-.jpg.jpg", "size_kb": 234.9, "path": "tiramisu/ref-01-File-Pizza-Express-South-Croydon-London-3376677566-.jpg.jpg" },
+        { "name": "ref-02-File-Food-Square-Pizza-al-Taglio-17197368481-.jpg.jpg", "size_kb": 255.9, "path": "tiramisu/ref-02-File-Food-Square-Pizza-al-Taglio-17197368481-.jpg.jpg" }
+      ]
+    }
+  },
+  "summary": {
+    "with_3_images": ["margherita", "napoletana", "calabresa", "quatro-queijos", "trufada", "frutos-do-mar"],
+    "with_2_images": ["parma", "carbonara", "doce-de-leite-coco", "tiramisu"],
+    "with_1_image": ["nutella-morango", "banana-canela"],
+    "with_0_images": ["romeu-julieta"],
+    "with_3_but_issues": ["marinara (3 extra from prev)", "portuguesa (irrelevant)", "vegetariana-gourmet (generic)"],
+    "total_valid_pizza_images_estimate": "~31"
+  }
+}
