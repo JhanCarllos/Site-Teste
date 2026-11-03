@@ -1,0 +1,51 @@
+{
+  "3": {
+    "inputs": {
+      "seed": 88888,
+      "steps": 30,
+      "cfg": 6,
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras",
+      "denoise": 1.0,
+      "model": ["4", 0],
+      "positive": ["6", 0],
+      "negative": ["7", 0],
+      "latent_image": ["5", 0]
+    },
+    "class_type": "KSampler",
+    "_meta": { "title": "KSampler - Logo Generation" }
+  },
+  "4": {
+    "inputs": { "ckpt_name": "realisticVisionV60B1_v60B1VAE_pruned_fp16.safetensors" },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": { "title": "Checkpoint Loader - Realistic Vision V6.0" }
+  },
+  "5": {
+    "inputs": { "width": 512, "height": 512, "batch_size": 4 },
+    "class_type": "EmptyLatentImage",
+    "_meta": { "title": "Empty Latent Image - 512x512 (logo), batch 4" }
+  },
+  "6": {
+    "inputs": { "text": "Professional pizzeria logo for \"Bella Napoli\", elegant Italian restaurant branding, circular badge design, vintage Italian typography \"BELLA NAPOLI\" curved on top, \"PIZZERIA\" curved on bottom, center: stylized Vesuvius volcano with smoke forming a pizza slice, tomato red and mozzarella white and basil green color palette, gold accents, clean vector style, minimalist, high contrast, white background, commercial logo quality, scalable, trademark style", "clip": ["4", 1] },
+    "class_type": "CLIPTextEncode",
+    "_meta": { "title": "Positive Prompt - Bella Napoli Logo" }
+  },
+  "7": {
+    "inputs": {
+      "text": "text watermark, signature, watermark, logo, letters BN, initials, blurry, low quality, distorted, ugly, bad anatomy, photorealistic, photo, 3d render, CGI, plastic, fake, shadow, gradient mesh, complex gradients, busy, cluttered, amateur, generic circle with BN",
+      "clip": ["4", 1]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": { "title": "Negative Prompt - Logo" }
+  },
+  "8": {
+    "inputs": { "samples": ["3", 0], "vae": ["4", 2] },
+    "class_type": "VAEDecode",
+    "_meta": { "title": "VAE Decode" }
+  },
+  "9": {
+    "inputs": { "filename_prefix": "logo-bella-napoli", "images": ["8", 0] },
+    "class_type": "SaveImage",
+    "_meta": { "title": "Save Image - logo-bella-napoli" }
+  }
+}

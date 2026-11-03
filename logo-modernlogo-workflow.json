@@ -1,0 +1,51 @@
+{
+  "3": {
+    "inputs": {
+      "seed": 77777,
+      "steps": 30,
+      "cfg": 6,
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras",
+      "denoise": 1.0,
+      "model": ["4", 0],
+      "positive": ["6", 0],
+      "negative": ["7", 0],
+      "latent_image": ["5", 0]
+    },
+    "class_type": "KSampler",
+    "_meta": { "title": "KSampler - Logo Generation (Modernlogo)" }
+  },
+  "4": {
+    "inputs": { "ckpt_name": "modernlogo.safetensors" },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": { "title": "Checkpoint Loader - Modernlogo (specialized logo model)" }
+  },
+  "5": {
+    "inputs": { "width": 512, "height": 512, "batch_size": 4 },
+    "class_type": "EmptyLatentImage",
+    "_meta": { "title": "Empty Latent Image - 512x512 (logo), batch 4" }
+  },
+  "6": {
+    "inputs": { "text": "Modern professional logo for \"Bella Napoli\" pizzeria, clean typography \"BELLA NAPOLI\" as hero text, \"PIZZERIA\" as elegant subtitle, minimal geometric pizza slice icon integrated into lettering, Italian tricolor (green/white/red) as subtle accent line or dot, white background, high contrast, vector-style, scalable, contemporary branding, negative space mastery, timeless modern aesthetic", "clip": ["4", 1] },
+    "class_type": "CLIPTextEncode",
+    "_meta": { "title": "Positive Prompt - Bella Napoli Logo (Modernlogo)" }
+  },
+  "7": {
+    "inputs": {
+      "text": "photorealistic, photo, 3d render, CGI, plastic, fake, shadow, gradient mesh, complex gradients, blurry, low quality, distorted, ugly, bad anatomy, watermark, text watermark, signature, letters BN, initials, circle with BN, generic, amateur, busy, cluttered, raster artifacts, vintage, retro, ornate, serif overload",
+      "clip": ["4", 1]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": { "title": "Negative Prompt - Logo" }
+  },
+  "8": {
+    "inputs": { "samples": ["3", 0], "vae": ["4", 2] },
+    "class_type": "VAEDecode",
+    "_meta": { "title": "VAE Decode" }
+  },
+  "9": {
+    "inputs": { "filename_prefix": "logo-bella-napoli-modernlogo", "images": ["8", 0] },
+    "class_type": "SaveImage",
+    "_meta": { "title": "Save Image - logo-bella-napoli-modernlogo" }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "3": {
+    "inputs": {
+      "seed": 11111,
+      "steps": 30,
+      "cfg": 7,
+      "sampler_name": "euler_ancestral",
+      "scheduler": "karras",
+      "denoise": 1.0,
+      "model": ["4", 0],
+      "positive": ["6", 0],
+      "negative": ["7", 0],
+      "latent_image": ["5", 0]
+    },
+    "class_type": "KSampler",
+    "_meta": { "title": "KSampler - Gera a imagem (altere seed por item)" }
+  },
+  "4": {
+    "inputs": { "ckpt_name": "realvisXL_v4.safetensors" },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": { "title": "Checkpoint Loader - SDXL (realvisXL_v4 ou juggernautXL_v9)" }
+  },
+  "5": {
+    "inputs": { "width": 1024, "height": 768, "batch_size": 1 },
+    "class_type": "EmptyLatentImage",
+    "_meta": { "title": "Empty Latent Image - 1024x768 (4:3 pizzas/galeria). Para hero: mude para 1024x576" }
+  },
+  "6": {
+    "inputs": { "text": "", "clip": ["4", 1] },
+    "class_type": "CLIPTextEncode",
+    "_meta": { "title": "Positive Prompt - COLE SEU PROMPT AQUI (ex: pizza margherita...)" }
+  },
+  "7": {
+    "inputs": {
+      "text": "blurry, low quality, distorted, deformed, ugly, bad anatomy, extra limbs, missing limbs, floating limbs, disconnected limbs, mutation, mutated, poorly drawn face, poorly drawn hands, missing fingers, extra fingers, fused fingers, too many fingers, long neck, username, watermark, signature, text, title, subtitle, header, footer, logo, border, frame, cropped, out of frame, worst quality, low quality, normal quality, jpeg artifacts, blur, haze, fog, smoke, overexposed, underexposed, bad lighting, flat lighting, harsh shadows, cartoon, illustration, painting, drawing, sketch, anime, 3d render, octane render, unreal engine, unity, lowres, bad composition, amateur, messy, cluttered, noisy, grainy, pixelated",
+      "clip": ["4", 1]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": { "title": "Negative Prompt - Universal (preenchido, nao altere)" }
+  },
+  "8": {
+    "inputs": { "samples": ["3", 0], "vae": ["4", 2] },
+    "class_type": "VAEDecode",
+    "_meta": { "title": "VAE Decode - SDXL VAE (do checkpoint)" }
+  },
+  "9": {
+    "inputs": { "filename_prefix": "bella-napoli", "images": ["8", 0] },
+    "class_type": "SaveImage",
+    "_meta": { "title": "Save Image - prefix bella-napoli (configure output path no ComfyUI)" }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "1": {
+    "inputs": {
+      "image": "Logo Exemplo.jpg",
+      "upload": "image"
+    },
+    "class_type": "LoadImage",
+    "_meta": { "title": "Load Reference Logo" }
+  },
+  "2": {
+    "inputs": {
+      "upscale_method": "lanczos",
+      "width": 512,
+      "height": 512,
+      "crop": "disabled",
+      "image": ["1", 0]
+    },
+    "class_type": "ImageScale",
+    "_meta": { "title": "Resize to 512x512 (pre-VAE)" }
+  },
+  "3": {
+    "inputs": {
+      "pixels": ["2", 0],
+      "vae": ["5", 2]
+    },
+    "class_type": "VAEEncode",
+    "_meta": { "title": "VAE Encode Reference" }
+  },
+  "4": {
+    "inputs": {
+      "seed": 88888,
+      "steps": 25,
+      "cfg": 6,
+      "sampler_name": "dpmpp_2m",
+      "scheduler": "karras",
+      "denoise": 0.25,
+      "model": ["5", 0],
+      "positive": ["7", 0],
+      "negative": ["8", 0],
+      "latent_image": ["3", 0]
+    },
+    "class_type": "KSampler",
+    "_meta": { "title": "KSampler IMG2IMG (denoise 0.25)" }
+  },
+  "5": {
+    "inputs": { "ckpt_name": "v1-5-pruned-emaonly-fp16.safetensors" },
+    "class_type": "CheckpointLoaderSimple",
+    "_meta": { "title": "Checkpoint Loader - SD 1.5" }
+  },
+  "6": {
+    "inputs": {
+      "samples": ["4", 0],
+      "vae": ["5", 2]
+    },
+    "class_type": "VAEDecode",
+    "_meta": { "title": "VAE Decode" }
+  },
+  "7": {
+    "inputs": {
+      "text": "Professional vector logo \"BELLA NAPOLI\" with \"PIZZERIA\" subtitle, exact same style as reference image — identical icon/shape/layout/colors, only text changed to BELLA NAPOLI, clean modern typography, Italian tricolor accent preserved, white background, vector quality, scalable, trademark style",
+      "clip": ["5", 1]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": { "title": "Positive Prompt - BELLA NAPOLI Text" }
+  },
+  "8": {
+    "inputs": {
+      "text": "different icon, different shape, different layout, different colors, photorealistic, photo, 3d, CGI, plastic, fake, blurry, low quality, distorted, ugly, bad anatomy, watermark, signature, letters BN, initials, circle with BN, generic, amateur, different style, vintage, retro, ornate, serif overload",
+      "clip": ["5", 1]
+    },
+    "class_type": "CLIPTextEncode",
+    "_meta": { "title": "Negative Prompt" }
+  },
+  "9": {
+    "inputs": {
+      "filename_prefix": "logo-bella-napoli-img2img",
+      "images": ["6", 0]
+    },
+    "class_type": "SaveImage",
+    "_meta": { "title": "Save Image - IMG2IMG Logo" }
+  }
+}
